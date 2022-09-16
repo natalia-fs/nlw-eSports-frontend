@@ -1,4 +1,6 @@
 import './styles/main.css';
+import { GameBanner } from './components/GameBanner';
+import { CreateAdBanner } from './components/CreateAdBanner';
 import logoImg from './assets/logo-nlw-esports.svg';
 
 import { MagnifyingGlassPlus } from 'phosphor-react';
@@ -28,7 +30,7 @@ function App() {
         <a className='relative rounded-lg overflow-hidden' href="">
           <img src="/game-2.png" alt="" />
 
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+      <CreateAdBanner />
             <strong className='font-bold text-white block'>Dota 2</strong>
             <span className='text-zinc-300 text-sm block'>4 anúncios</span>
           </div>
