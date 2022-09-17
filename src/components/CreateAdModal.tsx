@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import * as DialogPrimitive from '@radix-ui/react-dialog';
 import * as Checkbox from "@radix-ui/react-checkbox";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 
@@ -12,7 +13,7 @@ export function CreateAdModal() {
   const [games, setGames] = useState<Game[]>([]);
   const [weekDays, setWeekDays] = useState<string[]>([]);
   const [useVoiceChannel, setUseVoiceChannel] = useState(false);
-  console.log(weekDays, useVoiceChannel);
+  
   useEffect(() => {
     axios("http://localhost:3333/games").then((response) => {
       setGames(response.data);
@@ -235,12 +236,15 @@ export function CreateAdModal() {
           </label>
 
           <footer className="mt-4 flex justify-end gap-4">
-            <button
-              type="button"
-              className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
-            >
-              Cancelar
-            </button>
+            <DialogPrimitive.Close aria-label="Close">
+              <button
+                type="button"
+                className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
+                onClick={() => {}}
+              >
+                Cancelar
+              </button>
+            </DialogPrimitive.Close>
 
             <button
               type="submit"
