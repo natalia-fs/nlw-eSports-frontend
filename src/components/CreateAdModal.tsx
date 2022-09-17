@@ -236,14 +236,11 @@ export function CreateAdModal() {
           </label>
 
           <footer className="mt-4 flex justify-end gap-4">
-            <DialogPrimitive.Close aria-label="Close">
-              <button
-                type="button"
-                className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
-                onClick={() => {}}
-              >
-                Cancelar
-              </button>
+            <DialogPrimitive.Close
+              aria-label="Close"
+              className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
+            >
+              Cancelar
             </DialogPrimitive.Close>
 
             <button
