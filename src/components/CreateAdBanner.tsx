@@ -3,8 +3,8 @@ import { MagnifyingGlassPlus } from "phosphor-react";
 
 export function CreateAdBanner() {
   return (
-    <div className="pt-1 bg-nlw-gradient self-stretch mt-8 rounded-lg overflow-hidden h4">
-      <div className="bg-[#2A2634] px-8 py-6 flex justify-between items-center">
+    <div className="pt-1 bg-nlw-gradient self-stretch mt-8 mx-6 rounded-lg overflow-hidden xl:mx-0">
+      <div className="bg-[#2A2634] px-8 py-6 flex flex-col justify-center gap-6 items-stretch md:flex-row md:justify-between md:items-center">
         <div>
           <strong className="text-2xl text-white font-black block">
             Não encontrou o seu duo?
@@ -14,7 +14,7 @@ export function CreateAdBanner() {
           </span>
         </div>
 
-        <Dialog.Trigger className="py-3 px-4 bg-violet-500 hover:bg-violet-600 transition text-white rounded flex items-center gap-3">
+        <Dialog.Trigger className="py-3 px-4 bg-violet-500 hover:bg-violet-600 transition text-white rounded flex items-center gap-3 flex justify-center">
           <MagnifyingGlassPlus size={24} />
           Publicar anúncio
         </Dialog.Trigger>
